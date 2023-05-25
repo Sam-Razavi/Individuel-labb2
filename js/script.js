@@ -299,6 +299,7 @@ function updateItem(itemId, row) {
 
   var searchEl = document.querySelector('#searchInput');
 
+
  searchEl.oninput = function () {
     searchfun();
  }

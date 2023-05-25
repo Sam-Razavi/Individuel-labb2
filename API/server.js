@@ -7,10 +7,11 @@ const http = require('http').Server(app);
 app.use(cors());
 app.use(bodyParser.json())
 app.use(express.json());
-app.use('/api' , booksroute);
+app.use('/api', booksroute);
 const io = require('socket.io')(http);
 
-app.use(express.static(__dirname + '/index.html'));
+// Serve static files
+app.use(express.static(__dirname + '/public'));
 
 io.on('connection', (socket) => {
   console.log('A user connected');
@@ -24,14 +25,11 @@ io.on('connection', (socket) => {
   });
 });
 
+// Route to serve index.html file
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
+});
+
 http.listen(3000, () => {
   console.log('Server is listening on port 3000');
 });
-
-
-
-
-
-
-
-  

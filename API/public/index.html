@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+
+
+    <title>Library System</title>
+
+  </head>
+  <body>
+    <div class="header">
+    <h5>Library System</h5>
+    </div>
+    <div class="upper-btn-box">
+     <div class="left-box">
+       <button class="left-box-btn" id="add-data"><i class="fa fa-plus"></i>&nbsp;Add Books</button>
+     </div>
+     <div class="right-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Search by author...">
+
+     </div>
+    </div>
+    <div class="table-box">
+         <table id="myTable">
+      <thead>
+        <tr>
+          <th>Author</th>
+          <th>Title</th>
+          <th>Genre</th>
+          <th>Total-Article</th>
+          <th>Save Data</th>
+          <th>loaned</th>
+          <th>Year</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    </div>
+
+
+<div class="modal">
+    <i class="fa fa-close icon"></i>
+    <div class="inner-model">
+        <div class="input-box">
+            <input type="text" id="authorInput" placeholder="Author">
+            <input type="text" id="titleInput" placeholder="Title">
+            <input type="text" id="genresInput" placeholder="Genre">
+            <input type="number" id="totalarticle" placeholder="Total-Article">
+            <input type="number" id="loaned" placeholder="Loaned">
+            <input type="text" id="yearInput" placeholder="Year">
+            <button id="submitButton" class="box-btn">Submit</button>
+
+         </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="spinner-border"
+         role="status" id="loading">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<ul id="messages"></ul>
+<form id="form" action="">
+  <input id="input" autocomplete="off" /><button>Send</button>
+</form>
+<script src="/socket.io/socket.io.js"></script>
+   <script src="./script.js"></script>
+  </body>
+</html>
+
+    <!-- HTML markup -->

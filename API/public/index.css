@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #EE534F;
+}
+.header h5{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+.upper-btn-box{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+}
+.left-box{
+    width: 50%;
+    height: 100%;
+
+}
+.right-box{
+    width: 50%;
+    height: 100%;
+
+}
+.right-box i{
+    font-size: 30px;
+    color: #4289f5;
+    padding: 10px;
+
+}
+.right-box input{
+    width: 60%;
+   padding: 13px;
+   outline: none;
+   border: none;
+   border-bottom: 3px solid #4289f5;
+   font-size: 18px;
+   font-weight: bold;
+   margin: 0px 10px;
+
+}
+.left-box-btn{
+    border: none;
+    outline: none;
+    background-color: #4289f5;
+    padding: 13px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+#employees {
+    width: 100%;
+    padding: 30px;
+    padding: 30px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-right: 5px solid #ccc;
+    padding: 10px 0px 5px;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+#employees table{
+    width: 100%;
+
+}
+#employees table tr th{
+    border-right: 1px solid #ccc;
+    padding: 30px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+#employees table tr td{
+    border-right: 1px solid #ccc;
+    padding: 10px 0px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+/* Table styling */
+table {
+    /* width: 100%; */
+    border-collapse: collapse;
+    float: right;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  /* Optional hover effect */
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+
+.modal{
+    width: 30%;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #f2f2f2;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.modal.active{
+    opacity: 1;
+    z-index: 1;
+}
+.icon {
+    position: absolute;
+    right: 0;
+    top: -1%;
+    font-size:30px;
+    padding: 10px;
+    color: #EE534F;
+     cursor: pointer;
+
+}
+.input-box{
+    width: 100%;
+    gap: 3;
+
+}
+.input-box label {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 15px 0px;
+}
+.input-box input{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    font-size: 18px;
+    padding: 13px;
+    outline: none;
+    border-bottom: 3px solid #4289f5;
+    background-color: #f2f2f2;
+
+}
+
+.box-btn{
+    border: none;
+    outline: none;
+    background-color: #4289f5;
+    padding: 10px 30px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin: 20px 30px;
+    cursor: pointer;
+}
